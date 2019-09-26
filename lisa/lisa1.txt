@@ -1,0 +1,27 @@
+mine_otse
+8
+pööra_vasakule
+90
+joonista_kaar
+4
+180
+joonista_hulknurk
+6
+8
+la-la-la
+joonista üks kaar
+kilpkonn_hüppa!!!
+joonista_hulknurk
+10
+3
+mine_otse
+20
+pööra_vasakule
+180
+joonista_hulknurk
+2
+4
+mine_otse
+1
+joonista üks kaar
+kilpkonn_hüppa!!!
