@@ -6,14 +6,18 @@ def get_input(message, type, max = 0):
         while True:
             try:
                 inp = int(input(message))
-                if (inp % 2) != 0:
-                    return inp
-                else:
+                if (inp < 3):
+                    raise Exception('lessthanthree')
+                elif (inp % 2) == 0:
                     raise Exception('notodd')
+                else:
+                    return inp
             except Exception as e:
                 t = e.args[0]
                 if (t == 'notodd'):
                     print('Peab olema paaritu! Proovime uuesti...')
+                elif (t == 'lessthanthree'):
+                    print('Peab olema suurem kui kolm! Proovime uuesti...')
                 else:
                     print('Vigane sisend! Proovime uuesti...')
                 pass
