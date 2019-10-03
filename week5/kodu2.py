@@ -40,8 +40,8 @@ def get_input(message, type, max = 0):
         while True:
             try:
                 inp = str(input(message))
-                if (inp in ['N', 'E', 'W', 'S']):
-                    return inp
+                if (inp in ['N', 'E', 'W', 'S', 'n', 'e', 'w', 's']):
+                    return inp.upper()
                 else:
                     raise Exception()
             except:
