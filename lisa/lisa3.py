@@ -66,8 +66,23 @@ chars = [
     ],
 ]
 
-i_number = input("Sisesta arv: ")
-i_length = int(input("Sisesta suurus: "))
+while True:
+    try:
+        i_number = input("Sisesta arv: ")
+        i_length = int(input("Sisesta suurus: "))
+        if (int(i_number) < 0) or (int(i_number) > 9999):
+            raise Exception('number')
+        elif (i_length < 1) or (i_length > 8):
+            raise Exception('length')
+    except Exception as e:
+        t = e.args[0]
+        if (t == 'number'):
+            print("Number peab olema 0-9999, alustame uuesti...")
+        elif (t == 'length'):
+            print("Pikkus peab olema 1-8, alustame uuesti...")
+    else:
+        break
+
 space = " "
 out = ""
 
