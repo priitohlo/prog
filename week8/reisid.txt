@@ -1,0 +1,4 @@
+Helsingi päevakruiis;29
+matk Tokyo mägedes;700
+romantiline nädalalõpp Pärnus;150
+Praha pubiralli;400
