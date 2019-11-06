@@ -1,0 +1,4 @@
+Onu Juhan,4.5,0.2
+Laurenwagen,2,0.45
+Tartu Trandulett,1,0.75
+Luxtakso,4,0.7

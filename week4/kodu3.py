@@ -10,7 +10,6 @@ def sq_turtle(sides, length, s = s, t = t):
 
     t.begin_poly()
     for i in range(sides):
-        print('loop')
         t.fd(length)
         t.lt(degrees)
     t.end_poly()
