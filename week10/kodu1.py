@@ -1,7 +1,6 @@
 def erinevad_sümbolid(s):
     return set(s)
 
-
 def sümbolite_sagedus(s):
     retDict = {}
     symbols = erinevad_sümbolid(s)
@@ -23,7 +22,3 @@ def grupeeri(s):
         else:
             retDict['Muud'].add((k,v))
     return retDict
-
-
-
-print(grupeeri("sõida tasa üle silla"))
