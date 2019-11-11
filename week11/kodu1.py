@@ -10,7 +10,12 @@ def seosta_lapsed_ja_vanemad(fc, fn):
     with open(fc, 'r') as f:
         for r in f:
             r = r.split(' ')
-            children[names[r[0]]] = {r[0]: names[r[1].split()]}
+            p = names[r[1].strip()]
+            n = names[r[0]]
+            if p in children:
+                children[p].add(n)
+            else:
+                children[p] = {n}
     
     return children
 
